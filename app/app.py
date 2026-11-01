@@ -599,6 +599,7 @@ with tabs[3]:
         if st.button("Check stability"):
             acts4, _ = df_to_activities(st.session_state.acts_df)
             _, _, ord4 = E.validate(acts4, cfg)
+            m = float(R.dm)  # same disruption multiplier as the active result being validated
             rows = []
             for n in (1000, 5000, 10000, 50000):
                 s = E.summarise(RF.simulate_rainfall(acts4, ord4, cfg, n=n, seed=7, multiplier=m, historical=historical_rainfall))
