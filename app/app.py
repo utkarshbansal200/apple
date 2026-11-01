@@ -23,7 +23,7 @@ import rainfall_model as RF
 # page setup
 # ----------------------------------------------------------------------
 st.set_page_config(page_title="Monsoon Risk Calculator",
-                   page_icon="🌧️", layout="wide",
+                   page_icon="", layout="wide",
                    initial_sidebar_state="expanded")
 
 NAVY, ORANGE, RED, GREEN, MUT = "#1F3864", "#C55A11", "#B00020", "#2E7D32", "#6B7280"
